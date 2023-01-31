@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF80A319-5CAF-4E62-8771-26CA028D9320}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Golf_a_thon.My.MyApplication</StartupObject>
+    <RootNamespace>Golf_a_thon</RootNamespace>
+    <AssemblyName>Golf-a-thon</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Golf-a-thon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Golf-a-thon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEvent.Designer.vb">
+      <DependentUpon>frmAddEvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEvent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddGolfer.Designer.vb">
+      <DependentUpon>frmAddGolfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddGolfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddSponsor.Designer.vb">
+      <DependentUpon>frmAddSponsor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddSponsor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvents.Designer.vb">
+      <DependentUpon>frmEvents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGolfers.Designer.vb">
+      <DependentUpon>frmGolfers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGolfers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageGolferEvent.Designer.vb">
+      <DependentUpon>frmManageGolferEvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageGolferEvent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageSponsors.Designer.vb">
+      <DependentUpon>frmManageSponsors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageSponsors.vb" />
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modGolfAThon.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEvent.resx">
+      <DependentUpon>frmAddEvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddGolfer.resx">
+      <DependentUpon>frmAddGolfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddSponsor.resx">
+      <DependentUpon>frmAddSponsor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvents.resx">
+      <DependentUpon>frmEvents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGolfers.resx">
+      <DependentUpon>frmGolfers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageGolferEvent.resx">
+      <DependentUpon>frmManageGolferEvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageSponsors.resx">
+      <DependentUpon>frmManageSponsors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
